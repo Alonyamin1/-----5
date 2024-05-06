@@ -1,0 +1,126 @@
+body{
+    direction: rtl;
+}
+#img_div{
+    text-align: center;
+}
+#primary_container{
+    background-color: lightyellow;
+    max-width: 600px;
+    min-height: 780px;
+}
+.primary{
+    direction: ltr;
+    width: 70%;
+}
+.secondary{
+    direction: ltr;
+    width: 30%;
+}
+input{
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    margin: 3px;
+    font-weight: bold;
+    border: 3px solid black;
+    border-radius: 10%;
+    cursor: pointer;
+    background-color: white;
+}
+#l7,#c7{
+    background-color: red;
+}
+#buttons{
+    display: flex;
+}
+#controls{
+    text-align: center;
+}
+#answers_div{
+    margin-top: 25px;
+    direction: ltr;
+    text-align: center;
+    margin-bottom: 15px;
+}
+.ball {
+    width: 45px !important;
+    height: 45px;
+    text-align: center;
+    padding: 5px;
+    margin: 5px;
+    font-weight: bold;
+    border: 3px solid black;
+    display: inline-block;
+    margin: 0 auto !important;
+    border-radius: 50% !important;
+    background-color: yellow;
+  }
+  .check_me:hover {
+    background-color: gainsboro;
+    color: black;
+    border: 3 px solid white;
+    font-weight: bold;
+  }
+  h2{
+    text-align: center;
+  }
+
+  #text_balance{
+    height:80px;
+    font-size:50pt;
+    width: 100%;
+  }
+  #comments{
+    text-align: right;
+  }
+  #comments>p{
+    color: red;
+    font-weight: bold;
+  }
+
+  @keyframes color-change {
+    0% { background-color: rgb(255, 255, 255); }
+    50% { background-color: rgb(255, 0, 0); }
+    100% { background-color: rgb(255, 255, 255); }
+  }
+
+  @keyframes winner-color-change {
+    0% { background-color: rgb(0, 255, 0); }
+    50% { background-color: rgb(0, 0, 255); }
+    100% { background-color: rgb(0, 255, 0); }
+  }
+
+  .siren{
+    animation: color-change 0.5s infinite;
+  }
+
+  .winnersiren{
+    animation: winner-color-change 0.5s infinite;
+  }
+
+  .loser, .winner{
+    margin-top: auto;
+    margin-left: auto;
+    max-width: 590px;
+    position: absolute;
+    direction: ltr;
+    text-align: center;
+    font-size: 200px;
+    align-items: center;
+    justify-content: center;
+    display: none;
+    transform: translate(0,-20%);
+    z-index: 999;
+  }
+  
+  .loser{
+    color: red;
+  }
+
+  .winner{
+    color: rgb(0, 0, 255);
+  }
+  .hidden{
+    display: none;
+  }

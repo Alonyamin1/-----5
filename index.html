@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>הגרלת הלוטו!</title>
+    <link rel="stylesheet" href="./style.css">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+      integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+      crossorigin="anonymous"
+    />
+</head>
+<body>
+    <div class="container center rounded shadow-lg" id="primary_container" >
+        <div id="img_div">
+            <img class="img-fluid" src="./IMG/20121107004520!Lotto_logo.svg" style="width:50%;" />
+        </div>
+  
+        <div id="answers_div">
+          <div class="ball" id="l1"></div>
+          <div class="ball" id="l2"></div>
+          <div class="ball" id="l3"></div>
+          <div class="ball" id="l4"></div>
+          <div class="ball" id="l5"></div>
+          <div class="ball" id="l6"></div>
+          <div class="ball" id="l7"></div>
+          <div id="chosen_balls">
+          <h4>last roll you've guessed:</h4>
+          <div class="ball" id="c1"></div>
+          <div class="ball" id="c2"></div>
+          <div class="ball" id="c3"></div>
+          <div class="ball" id="c4"></div>
+          <div class="ball" id="c5"></div>
+          <div class="ball" id="c6"></div>
+          <div class="ball" id="c7"></div>
+        </div>
+        </div>
+
+        <div class="loser">LOSER!</div>
+        <div class="winner">WINNER!</div>
+        
+        <div class="container" id="buttons">
+                <div class="secondary">
+
+                </div>
+                <div class="primary">
+
+                </div>               
+        </div>
+        <div id="controls">
+            <button id="end_btn" class="m-2 btn btn-dark" onclick="spr()" type="button">
+                    סיים הגרלה
+                    </button>
+                    <button onclick="generateRandomNumbers();" id="check_btn" class="m-2 btn btn-dark" onClick="window.location.reload()">
+                    בדיקת הגרלה
+                    </button>
+        </div>
+        <h2>מצב החשבון:</h2>
+        <div id="balance">
+            <input type="text" value="1000₪" id="text_balance" readonly>
+        </div>
+        <div id="comments">
+            <p>*כל סיבוב עולה 300₪, ניחוש נכון של 4 מספרים ומספר חזק מזכה ב400 ש"ח, ניחוש נכון של 6 מספרים ללא מספר חזק מזכה ב600 ש"ח וניחוש נכון של 6 המספרים והמספר החזק מזכה ב1000 ש"ח* </p>
+      </div>
+      </div>
+      
+    <script src="./script.js"></script>
+</body>
+</html>
